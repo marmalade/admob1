@@ -1,1 +1,4 @@
 Integration of AdMob ads for Android OS using extensions
+
+- AdmobAdsExample - example code which will show/hide ads every 15 seconds
+- AdmobAds - extension, to better work add this one to the extensions dir at the marmalade (it requires when loocking for GoogleAdMobAdsSdk-4.1.0.jar file)
