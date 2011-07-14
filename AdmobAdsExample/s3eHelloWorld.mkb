@@ -1,0 +1,16 @@
+#!/usr/bin/env mkb
+files
+{
+	s3eHelloWorld.cpp
+}
+subprojects
+{
+	AdmobAds
+}
+#### AUTO GENERATED deployment settings from DeployTool.exe. Do not edit below this line ####
+deployments
+{
+	["Default"]
+	android-external-jars='GoogleAdMobAdsSdk-4.1.0.jar'
+	android-manifest=AndroidManifest.xml
+}

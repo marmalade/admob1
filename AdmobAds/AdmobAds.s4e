@@ -1,0 +1,6 @@
+#include <s3eTypes.h>
+
+functions:
+s3eResult InitAds(const char* pub_id) S3E_RESULT_ERROR run_on_os_thread
+s3eResult ShowAds() S3E_RESULT_ERROR run_on_os_thread
+s3eResult HideAds() S3E_RESULT_ERROR run_on_os_thread

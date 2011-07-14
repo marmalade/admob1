@@ -1,0 +1,9 @@
+#!/usr/bin/env mkb
+files
+{
+	s3eHelloWorld.cpp
+}
+subprojects
+{
+	AdmobAds
+}
