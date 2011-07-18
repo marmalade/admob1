@@ -11,7 +11,6 @@ These functions are called via JNI from native code.
  */
 import android.view.ViewGroup.LayoutParams;
 import android.view.View;
-import android.util.Log;
 
 import com.google.ads.Ad;
 import com.google.ads.AdRequest;
@@ -41,14 +40,12 @@ class AdmobAds
     public int ShowAds()
     {
 	if(adView!=null){
-		Log.i("s3eHelloWorld", "Ok");
 		LoaderActivity.m_Activity.runOnUiThread(new Runnable() {
 			@Override
 			public void run() {
 				adView.setVisibility(View.VISIBLE);
 			}});
 	} else { 
-		Log.e("s3eHelloWorld", "No adView found =(", null);
 		return ADVIEW_NOT_INITIALIZED; 
 	}
 
@@ -57,14 +54,12 @@ class AdmobAds
     public int HideAds()
     {
 	if(adView!=null){
-		Log.i("s3eHelloWorld", "Ok");
 		LoaderActivity.m_Activity.runOnUiThread(new Runnable() {
 			@Override
 			public void run() {
 				adView.setVisibility(View.INVISIBLE);
 			}});
 	} else { 
-		Log.e("s3eHelloWorld", "No adView found =(", null);
 		return ADVIEW_NOT_INITIALIZED; 
 	}
         return 0;
